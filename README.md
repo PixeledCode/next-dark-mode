@@ -134,7 +134,7 @@ export default function RootLayout({
 }
 ```
 
-3. This works, we need to sync the toggle with the user preference. We will use `useEffect` to sync the toggle with the user preference.
+3. This works but we need to sync the toggle with the user preference. We will use `useEffect` to sync the toggle with the user preference.
 
 ```tsx
 // /components/theme-toggle.tsx
