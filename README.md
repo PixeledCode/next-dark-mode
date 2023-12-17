@@ -2,6 +2,8 @@
 
 This repository is a separate implementation of the [Dark Mode in Joy of React](https://github.com/joy-of-react/next-13-dark-mode/tree/main). This differs by relying on CSS Variables and uses `prefers-color-scheme` API to detect the user's preference for first time visitors.
 
+[Live Site](https://next-dark-mode-px.vercel.app/)
+
 ## Getting Started
 
 This method is made for Next.js `/app` router. But the methodology should work with any React framework that generates `html` on the server.
