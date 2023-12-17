@@ -134,7 +134,7 @@ export default function RootLayout({
 }
 ```
 
-3. This works but we need to sync the toggle with the user preference. We will use `useEffect` to sync the toggle with the user preference.
+3. This works but we need to sync the toggle with the user preference.
 
 ```tsx
 // /components/theme-toggle.tsx
@@ -202,7 +202,7 @@ We are using CSS Variables to set the theme. It's upto you on how to manage the 
 
 ### CSS based on theme
 
-Since we are [data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) to set the theme, we can use CSS to change the styles based on theme. We cannot rely on `@media (prefers-color-scheme: dark)` anymore.
+Since we are using [data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) to set the theme, we can use CSS to change the styles based on theme. We cannot rely on `@media (prefers-color-scheme: dark)` anymore.
 
 ```css
 [data-theme-color='dark'] {
