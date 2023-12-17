@@ -6,7 +6,7 @@ This repository is a separate implementation of the [Dark Mode in Joy of React](
 
 ## Getting Started
 
-This method is made for Next.js `/app` router. But the methodology should work with any React framework that generates `html` on the server.
+This is made for Next.js `/app` router. But the methodology should work with any React framework that generates `html` on the server.
 
 Let's start by creating a simple toggle without user preference detection.
 
