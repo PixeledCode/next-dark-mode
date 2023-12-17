@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const ThemeScript = () => {
 	const codeToRunOnClient = `
 		(function() {
-			if(document.documentElement.getAttribute('data-theme-preference') === 'system' && window.matchMedia) {
+			if(document.documentElement.getAttribute('data-theme-color') === 'system' && window.matchMedia) {
 				const theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 				document.documentElement.setAttribute('data-theme-color', theme)
 
@@ -38,7 +38,7 @@ export default function RootLayout({
 	const theme = savedTheme?.value || 'system'
 
 	return (
-		<html lang="en" data-theme-color={theme} data-theme-preference={theme}>
+		<html lang="en" data-theme-color={theme}>
 			<head>
 				<ThemeScript />
 			</head>
